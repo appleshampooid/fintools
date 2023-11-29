@@ -10,7 +10,7 @@ remaining_paydays = 0
 comparator = datetime.datetime.today()
 if len(sys.argv) > 1:
     comparator = datetime.datetime.strptime(sys.argv[1], '%Y-%m-%d')
-#print(comparator)
+# print(comparator)
 while i <= datetime.datetime(2023, 12, 31):
     if i > comparator:
         remaining_paydays += 1
